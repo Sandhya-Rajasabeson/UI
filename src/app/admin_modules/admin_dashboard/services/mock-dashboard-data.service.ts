@@ -1,6 +1,8 @@
 import { DASHBOARDDATA } from './user-data.service.mockdata';
 import { of } from 'rxjs';
+import { Injectable } from "@angular/core";
 
+@Injectable()
 export class MockDashboardDataService {
   data = {data: DASHBOARDDATA};
   getPromise(route) {

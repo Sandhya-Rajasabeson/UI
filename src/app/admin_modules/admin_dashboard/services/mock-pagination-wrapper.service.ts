@@ -1,5 +1,7 @@
 import { DASHBOARDDATA, DASHBOARDDATARESPONSE } from './user-data.service.mockdata';
+import { Injectable } from "@angular/core";
 
+@Injectable()
 export class MockPaginationWrapperService {
       data = {data: DASHBOARDDATA};
       responseData = DASHBOARDDATARESPONSE;
