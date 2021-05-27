@@ -1,4 +1,4 @@
-import { Injectable, Output, EventEmitter } from '@angular/core';
+import { Injectable, Output, EventEmitter, Directive } from '@angular/core';
 import {HttpClient, HttpParams, HttpHeaders, HttpRequest} from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
@@ -17,6 +17,7 @@ const httpOptions = {
     'Content-Type': 'application/x-www-form-urlencoded'
   })
 };
+@Directive()
 @Injectable({
   providedIn: 'root'
 })
