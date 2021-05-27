@@ -15,8 +15,8 @@ export class BaseEvidenceComponent implements OnInit, AfterViewInit, OnDestroy {
   displayedColumns = ['id', 'timestamp'];
   dataSource: MatTableDataSource<any>;
 
-  @ViewChild(MatPaginator, {static: false}) paginator: MatPaginator;
-  @ViewChild(MatSort, {static: false}) sort: MatSort;
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+  @ViewChild(MatSort) sort: MatSort;
 
   // Reference to the subscription used to refresh the viewer
   protected intervalRefreshSubscription: Subscription;

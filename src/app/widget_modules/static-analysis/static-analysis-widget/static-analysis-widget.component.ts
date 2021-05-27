@@ -66,7 +66,7 @@ export class StaticAnalysisWidgetComponent extends WidgetComponent implements On
   // Reference to the subscription used to refresh the widget
   private intervalRefreshSubscription: Subscription;
 
-  @ViewChild(LayoutDirective, {static: false}) childLayoutTag: LayoutDirective;
+  @ViewChild(LayoutDirective) childLayoutTag: LayoutDirective;
 
   constructor(componentFactoryResolver: ComponentFactoryResolver,
               cdr: ChangeDetectorRef,

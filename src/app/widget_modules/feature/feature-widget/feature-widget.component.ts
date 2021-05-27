@@ -39,7 +39,7 @@ export class FeatureWidgetComponent extends WidgetComponent implements OnInit, A
   private done = [];
   private featureWip;
 
-  @ViewChild(LayoutDirective, {static: false}) childLayoutTag: LayoutDirective;
+  @ViewChild(LayoutDirective) childLayoutTag: LayoutDirective;
 
   constructor(componentFactoryResolver: ComponentFactoryResolver,
               cdr: ChangeDetectorRef,

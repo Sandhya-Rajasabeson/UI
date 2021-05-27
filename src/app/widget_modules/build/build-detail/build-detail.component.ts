@@ -11,7 +11,7 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 export class BuildDetailComponent implements OnInit {
 
   @Input() detailView: Type<any>;
-  @ViewChild(MatVerticalStepper, { static: false }) stepper: MatVerticalStepper;
+  @ViewChild(MatVerticalStepper) stepper: MatVerticalStepper;
 
   public data;
   public readableDuration;

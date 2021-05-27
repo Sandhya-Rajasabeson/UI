@@ -126,7 +126,7 @@ import { curveLinear } from 'd3-shape';
 })
 export class LineAndBarChartComponent extends BaseChartComponent {
 
-  @ViewChild(LineSeriesComponent, {static: false}) lineSeriesComponent: LineSeriesComponent;
+  @ViewChild(LineSeriesComponent) lineSeriesComponent: LineSeriesComponent;
 
   @Input() curve: any = curveLinear;
   @Input() legend = false;

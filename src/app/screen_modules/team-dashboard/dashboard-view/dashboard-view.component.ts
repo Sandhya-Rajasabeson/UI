@@ -26,7 +26,7 @@ export class DashboardViewComponent extends DashboardComponent implements OnInit
   dashboardTitle = '';
   dashboardId: string;
   widgetsAll: IWidget[] = widgetsAll;
-  @ViewChild(TemplatesDirective, {static: false}) childTemplateTag: TemplatesDirective;
+  @ViewChild(TemplatesDirective) childTemplateTag: TemplatesDirective;
 
   constructor(componentFactoryResolver: ComponentFactoryResolver,
               cdr: ChangeDetectorRef,

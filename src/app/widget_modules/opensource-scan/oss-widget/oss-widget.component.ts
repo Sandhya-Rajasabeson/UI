@@ -48,7 +48,7 @@ export class OSSWidgetComponent extends WidgetComponent implements OnInit, After
   private selectedIndex: number;
   public hasRefreshLink: boolean;
   @ViewChild('projectSelector', { static: true }) projectSelector: ElementRef;
-  @ViewChild(LayoutDirective, {static: false}) childLayoutTag: LayoutDirective;
+  @ViewChild(LayoutDirective) childLayoutTag: LayoutDirective;
 
   constructor(componentFactoryResolver: ComponentFactoryResolver,
               cdr: ChangeDetectorRef,
